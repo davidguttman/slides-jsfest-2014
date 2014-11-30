@@ -1,0 +1,24 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "beefy index.js --live"
+  },
+  "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "beefy": "^2.1.1",
+    "browserify": "^6.3.3",
+    "jadeify": "^3.0.0",
+    "sassify": "^0.5.2",
+    "watchify": "^2.1.1"
+  },
+  "browserify": {
+    "transform": [
+      "jadeify",
+      "sassify"
+    ]
+  }
+}
