@@ -1,3 +1,5 @@
+require('./style.scss')
+
 var slides =
   [ require('./slides/preload')
   , require('./slides/title')

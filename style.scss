@@ -1,0 +1,19 @@
+$darkGreen: #005E54;
+$lightTan: #FDF3B6;
+$tan: #E0D09C;
+$darkGray: #0E1321;
+$darkBlue: #00426E;
+$blue: #397F9D;
+$orange: #F27300;
+$darkRed: #7F130D;
+
+html {
+  overflow: hidden;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: $darkGray;
+  color: $tan;
+}
