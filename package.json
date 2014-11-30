@@ -13,7 +13,8 @@
     "browserify": "^6.3.3",
     "jadeify": "^3.0.0",
     "sassify": "^0.5.2",
-    "watchify": "^2.1.1"
+    "watchify": "^2.1.1",
+    "wave-pendulum": "^0.1.0"
   },
   "browserify": {
     "transform": [
