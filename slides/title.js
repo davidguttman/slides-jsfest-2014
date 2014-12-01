@@ -26,7 +26,7 @@ module.exports = function(el) {
     , foreground: '#E0D09C'
     , background: '#0E1321'
     , duration: 20000
-    , loop: true
+    , loop: false
     , autoStart: false
     , thetaStart: 0
     , thetaEnd: 2 * Math.PI
@@ -37,16 +37,10 @@ module.exports = function(el) {
   el.appendChild(textGraph.el)
   textGraph.render(0)
 
-  var started = false
-  el.addEventListener('click', function() {
-    if (started) {
-      textGraph.opts.loop = false
-      return
-    }
-    started = true
+  setTimeout(function() {
     textGraph.playing = true
     textGraph.timeStart = null
     textGraph.animate()
-  })
+  }, 2000)
 
 }
