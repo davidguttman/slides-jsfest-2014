@@ -11,6 +11,7 @@
   "dependencies": {
     "beefy": "^2.1.1",
     "browserify": "^6.3.3",
+    "hyperscript": "^1.4.2",
     "jadeify": "^3.0.0",
     "sassify": "^0.5.2",
     "text-3d-particles": "^0.4.0",
