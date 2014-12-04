@@ -6,7 +6,7 @@ var Point = Isomer.Point
 var Shape = Isomer.Shape
 
 var cOrange = Color('#F27300')
-cOrange.darken(0.25)
+cOrange.darken(0.5)
 
 module.exports = function(el) {
   el.innerHTML = ''
@@ -36,7 +36,7 @@ module.exports = function(el) {
       var y = 1 - d/2
       var z = 3 - h/2
       var pos = Point(x, y, z)
-      var c = cOrange.clone().lighten(mod*0.75)
+      var c = cOrange.clone().lighten(mod)
       var ic = new Isomer.Color(c.red(), c.green(), c.blue())
       iso.add(Shape.Prism(pos, w, d, h), ic)
     }
