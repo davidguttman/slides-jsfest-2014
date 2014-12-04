@@ -11,12 +11,16 @@
   "dependencies": {
     "beefy": "^2.1.1",
     "browserify": "^6.3.3",
+    "color": "^0.7.3",
+    "eases": "^1.0.2",
     "hyperscript": "^1.4.2",
+    "isomer": "^0.2.4",
     "jadeify": "^3.0.0",
+    "raf": "^2.0.4",
     "sassify": "^0.5.2",
     "text-3d-particles": "^0.4.0",
     "watchify": "^2.1.1",
-    "wave-pendulum": "^0.1.0"
+    "wave-pendulum": "^0.2.0"
   },
   "browserify": {
     "transform": [

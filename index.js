@@ -4,12 +4,14 @@ var imgSlide = require('./image-slide')
 
 var slides =
   [ require('./slides/preload')
-  , require('./slides/title')
-  , imgSlide('/images/brainpod-1.jpg')
-  , imgSlide('/images/brainpod-2.jpg')
-  , imgSlide('/images/glow-1.jpg')
-  , imgSlide('/images/glow-2.jpg')
-  , imgSlide('/images/yoyo.jpg')
+  // , require('./slides/title')
+  , require('./slides/block-wave/1')
+  , require('./slides/block-wave/2')
+  , require('./slides/block-wave/3')
+  , require('./slides/block-wave/4')
+  , require('./slides/block-wave/5')
+  , require('./slides/block-wave/6')
+  , require('./slides/block-wave/7')
   ]
 
 window.addEventListener('hashchange', onHashChange)
