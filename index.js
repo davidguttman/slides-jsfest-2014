@@ -1,5 +1,7 @@
 require('./style.scss')
 
+document.title = 'Winning the Internet with Browserify'
+
 var imgSlide = require('./image-slide')
 
 var slides =
