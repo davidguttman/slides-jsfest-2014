@@ -12,4 +12,13 @@ module.exports = function(el) {
     }
   )
   el.appendChild(pendulum.el)
+
+  function check () {
+    if (!pendulum.el.parentNode) {
+      pendulum.stop()
+    } else {
+      setTimeout(check, 1000)
+    }
+  }
+  check()
 }
