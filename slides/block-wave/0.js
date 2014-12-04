@@ -1,9 +1,5 @@
 var raf = require('raf')
 var Color = require('color')
-var Isomer = require('isomer')
-
-var Point = Isomer.Point
-var Shape = Isomer.Shape
 
 var cOrange = Color('#F27300')
 
@@ -19,25 +15,15 @@ module.exports = function(el) {
 
   var duration = 2000
 
-  var iso = new Isomer(canvas)
-  var nThings = 8
-
   function render (p) {
     ctx.clearRect(0, 0, width, height)
-    for (var i = nThings; i > 0; i--) {
-      var theta = (p + i/nThings) * 2 * Math.PI
-      var mod = Math.sin(theta) / 2 + 0.5
 
-      var w = 0.5
-      var d = 2 * mod + 1
-      var h = 2 * mod + 1
-      var x = i - nThings/2
-      var y = 1 - d/2
-      var z = 3 - h/2
-      var pos = Point(x, y, z)
-      var c = new Isomer.Color(cOrange.red(), cOrange.green(), cOrange.blue())
-      iso.add(Shape.Prism(pos, w, d, h), c)
-    }
+    var w = h = width/4
+    var x = 0.5 * width/2 + w/2
+    var y = height/2 - h/2
+
+    ctx.fillStyle = cOrange.hexString()
+    ctx.fillRect(x, y, w, h)
   }
 
   var timeStart = Date.now()
@@ -52,3 +38,6 @@ module.exports = function(el) {
 
   tick()
 }
+
+
+

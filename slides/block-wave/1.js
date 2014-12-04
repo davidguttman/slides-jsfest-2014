@@ -33,7 +33,7 @@ module.exports = function(el) {
   function tick () {
     if (!canvas.parentNode) return
     var elapsed = Date.now() - timeStart
-    var p = (elapsed % duration) / duration
+    var p = (Date.now() % duration) / duration
     render(p)
     raf(tick)
   }

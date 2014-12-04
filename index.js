@@ -7,6 +7,7 @@ var imgSlide = require('./image-slide')
 var slides =
   [ require('./slides/preload')
   // , require('./slides/title')
+  , require('./slides/block-wave/0')
   , require('./slides/block-wave/1')
   , require('./slides/block-wave/2')
   , require('./slides/block-wave/3')
