@@ -18,7 +18,7 @@ module.exports = function(el) {
   function render (p) {
     ctx.clearRect(0, 0, width, height)
     var mod = Math.sin(p * 2 * Math.PI) / 2 + 0.5
-    var w = h = mod * width/4
+    var w = h = mod * width/4 + width/16
     var x = width/2 - w/2
     var y = height/2 - h/2
     ctx.fillStyle = cOrange.hexString()
