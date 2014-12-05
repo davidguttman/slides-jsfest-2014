@@ -6,7 +6,11 @@ var imgSlide = require('./image-slide')
 
 var slides =
   [ require('./slides/preload')
-  // , require('./slides/title')
+  , require('./slides/title')
+  , require('./slides/perfect-loops/1')
+  , require('./slides/perfect-loops/2')
+  , require('./slides/perfect-loops/3')
+  , require('./slides/perfect-loops/4')
   , require('./slides/block-wave/0')
   , require('./slides/block-wave/1')
   , require('./slides/block-wave/2')
@@ -15,6 +19,7 @@ var slides =
   , require('./slides/block-wave/5')
   , require('./slides/block-wave/6')
   , require('./slides/block-wave/7')
+  , require('./slides/block-wave/8')
   ]
 
 window.addEventListener('hashchange', onHashChange)

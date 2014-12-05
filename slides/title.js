@@ -5,7 +5,7 @@ module.exports = function(el) {
 
   var width = window.innerWidth
   var height = window.innerHeight
-  var fontSize = 100
+  var fontSize = 50
 
   var canvas = document.createElement('canvas')
   canvas.width = width
@@ -14,18 +14,18 @@ module.exports = function(el) {
   context = canvas.getContext('2d')
 
   context.textAlign = 'center'
-  context.font = "bold "+80+"px Georgia"
-  context.fillText('The Art of', width/2, height/2 - fontSize/2)
   context.font = "bold "+fontSize+"px Georgia"
-  context.fillText('Browserify', width/2, height/2 + fontSize/2)
+  context.fillText('Winning the Internet', width/2, height/2 - fontSize/2)
+  context.font = "bold "+fontSize+"px Georgia"
+  context.fillText('with Browserify', width/2, height/2 + fontSize/2)
 
   var opts =
     { canvas: canvas
-    , density: 5
-    , nodeSize: 16
+    , density: 3
+    , nodeSize: 8
     , foreground: '#E0D09C'
     , background: '#0E1321'
-    , duration: 20000
+    , duration: 10000
     , loop: false
     , autoStart: false
     , thetaStart: 0
@@ -37,10 +37,10 @@ module.exports = function(el) {
   el.appendChild(textGraph.el)
   textGraph.render(0)
 
-  setTimeout(function() {
-    textGraph.playing = true
-    textGraph.timeStart = null
-    textGraph.animate()
-  }, 2000)
+  // setTimeout(function() {
+  //   textGraph.playing = true
+  //   textGraph.timeStart = null
+  //   textGraph.animate()
+  // }, 2000)
 
 }
