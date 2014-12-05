@@ -17,14 +17,15 @@ var slides =
   , require('./slides/block-wave/2')
   , require('./slides/block-wave/easing')
   , require('./slides/block-wave/3')
+  , require('./slides/block-wave/4')
   , require('./slides/block-wave/isomer')
-  , require('./slides/block-wave/3')
   , require('./slides/block-wave/4')
   , require('./slides/block-wave/5')
   , require('./slides/block-wave/6')
   , require('./slides/block-wave/color')
   , require('./slides/block-wave/6')
   , require('./slides/block-wave/7')
+  , require('./slides/block-wave/gif')
   , require('./slides/block-wave/8')
   ]
 
