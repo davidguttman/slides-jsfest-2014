@@ -12,6 +12,7 @@
     "beefy": "^2.1.1",
     "browserify": "^6.3.3",
     "color": "^0.7.3",
+    "ease-component": "^1.0.0",
     "eases": "^1.0.2",
     "hyperscript": "^1.4.2",
     "isomer": "^0.2.4",
