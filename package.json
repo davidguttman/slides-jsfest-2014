@@ -18,6 +18,7 @@
     "isomer": "^0.2.4",
     "jadeify": "^3.0.0",
     "loading-wave": "0.0.2",
+    "perlin-simplex": "0.0.2",
     "raf": "^2.0.4",
     "sassify": "^0.5.2",
     "text-3d-particles": "^0.4.0",

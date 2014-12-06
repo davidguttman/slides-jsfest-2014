@@ -10,7 +10,7 @@ module.exports = function(el) {
 
 function render () {
   var html = h('div',
-    h('h1', 'Awesome Thing #2: Wave Pendulum Pattern'))
+    h('h1', 'Awesome Thing #3: Perlin Noise'))
 
   return html
 }

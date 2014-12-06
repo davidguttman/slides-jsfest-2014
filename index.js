@@ -34,6 +34,9 @@ var slides =
   , require('./slides/block-twist/loading-wave')
   , require('./slides/block-twist/1')
   , require('./slides/block-twist/2')
+
+  , require('./slides/block-terrain/cheap-trick-perlin')
+  , require('./slides/block-terrain/1')
   ]
 
 window.addEventListener('hashchange', onHashChange)

@@ -10,7 +10,7 @@ module.exports = function(el) {
 
 function render () {
   var html = h('div',
-    h('h1', 'Easing is Awesome'))
+    h('h1', 'Awesome Thing #1: Non-linear Motion'))
 
   return html
 }
