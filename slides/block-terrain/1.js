@@ -31,8 +31,8 @@ module.exports = function(el) {
   var nCells = nRows * nCols
   var unit = 6/nRows
 
-  var oWidth = 2
-  var oHeight = 2
+  var oWidth = 1.5
+  var oHeight = 1.5
   var oDist = 2
 
   function render (p) {
@@ -55,7 +55,7 @@ module.exports = function(el) {
 
         var x = row * w
         var y = col * w
-        var z = 1.2 * mod * unit
+        var z = mod * mod * unit
 
         var pos = Point(x, y, z)
         var c = cOrange.clone().lighten(1.2 * mod)
