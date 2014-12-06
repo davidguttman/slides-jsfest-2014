@@ -36,6 +36,7 @@ var slides =
   , require('./slides/block-twist/2')
 
   , require('./slides/block-terrain/cheap-trick-perlin')
+  , require('./slides/block-terrain/example')
   , require('./slides/block-terrain/1')
   , require('./slides/block-terrain/comment')
 
