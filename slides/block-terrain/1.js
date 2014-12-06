@@ -22,7 +22,7 @@ module.exports = function(el) {
   var width = canvas.width = window.innerWidth
   var height = canvas.height = window.innerHeight
 
-  var duration = 40000
+  var duration = 20000
 
   var iso = new Isomer(canvas)
 
@@ -33,26 +33,19 @@ module.exports = function(el) {
 
   var oWidth = 2
   var oHeight = 2
-  var oSpeed = 0.25 * duration/1000
+  var oDist = 2
 
   function render (p) {
     ctx.clearRect(0, 0, width, height)
 
-    if (p < 0.5) {
-      p = ease.inOutSine(p*2)
-    } else {
-      p = ease.inOutSine((1-p)*2)
-    }
-
-    var xPos = p * oSpeed
-    var yPos = p * oSpeed
-    var zPos = p * oSpeed
+    var xPos = Math.sin(p * Math.PI * 2) * oDist
+    var yPos = Math.cos(p * Math.PI * 2) * oDist
 
     for (var row = nRows; row > 0; row--) {
       for (var col = nCols; col > 0; col--) {
         var oX = xPos - (col/nCols) * oWidth
         var oY = yPos - (row/nRows) * oHeight
-        var oZ = zPos
+        // var oZ = zPos
 
         var mod = simplex.noise(oX, oY)/2 + 0.5
 
