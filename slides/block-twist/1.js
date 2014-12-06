@@ -39,7 +39,8 @@ module.exports = function(el) {
       var z = i * (unit + unit/2)
 
       var pos = Point(x, y, z)
-      var ic = new Isomer.Color(cOrange.red(), cOrange.green(), cOrange.blue())
+      var c = cOrange.clone().lighten(0.75 * i/nThings)
+      var ic = new Isomer.Color(c.red(), c.green(), c.blue())
       var shape = Shape.Prism(pos, w, d, h)
 
       var rPos = Point(x + w/2, y + d/2, z)
@@ -53,7 +54,7 @@ module.exports = function(el) {
   function tick () {
     if (!canvas.parentNode) return
     var elapsed = Date.now() - timeStart
-    var p = (Date.now() % duration) / duration
+    var p = (elapsed % duration) / duration
     render(p)
     raf(tick)
   }

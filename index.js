@@ -31,8 +31,8 @@ var slides =
   , require('./slides/block-wave/8')
 
   , require('./slides/block-twist/cheap-trick-wave')
-  , require('./slides/block-twist/1')
   , require('./slides/block-twist/loading-wave')
+  , require('./slides/block-twist/1')
   ]
 
 window.addEventListener('hashchange', onHashChange)
