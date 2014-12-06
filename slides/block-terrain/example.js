@@ -44,6 +44,12 @@ module.exports = function(el) {
         ctx.fillRect(x, y, 0.75 * w, 0.75 * h)
       }
     }
+
+    var indH = 3
+    var indX = x0 - (w*2)
+    var indY = mod * tH + y0 - indH/2
+    ctx.fillStyle = '#F27300'
+    ctx.fillRect(indX, indY, w, indH)
   }
 
   var timeStart = Date.now()
