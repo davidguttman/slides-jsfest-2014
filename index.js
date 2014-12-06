@@ -38,6 +38,8 @@ var slides =
   , require('./slides/block-terrain/cheap-trick-perlin')
   , require('./slides/block-terrain/1')
   , require('./slides/block-terrain/comment')
+
+  , require('./slides/text-3d/1')
   ]
 
 window.addEventListener('hashchange', onHashChange)
