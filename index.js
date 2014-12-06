@@ -40,6 +40,8 @@ var slides =
   , require('./slides/block-terrain/comment')
 
   , require('./slides/text-3d/1')
+  , require('./slides/text-3d/t3d-reddit')
+  , require('./slides/text-3d/t3d-code')
   ]
 
 window.addEventListener('hashchange', onHashChange)
