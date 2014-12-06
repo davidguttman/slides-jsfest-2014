@@ -8,13 +8,15 @@ $orange: #F27300;
 $darkRed: #7F130D;
 
 html {
+  height: 100%;
   overflow: hidden;
   padding: 0;
+  background-color: $darkGray;
+  background: -webkit-linear-gradient(top, #0E0E0E, $darkGray);
 }
 
 body {
   margin: 0;
-  background: $darkGray;
   color: $tan;
   text-align: center;
   font-family: 'helvetica neue';

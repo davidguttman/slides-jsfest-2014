@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "beefy index.js --live"
+    "dev": "beefy index.js"
   },
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
   "license": "MIT",
@@ -17,6 +17,7 @@
     "hyperscript": "^1.4.2",
     "isomer": "^0.2.4",
     "jadeify": "^3.0.0",
+    "loading-wave": "0.0.2",
     "raf": "^2.0.4",
     "sassify": "^0.5.2",
     "text-3d-particles": "^0.4.0",
