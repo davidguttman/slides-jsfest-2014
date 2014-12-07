@@ -46,6 +46,10 @@ var slides =
   , require('./slides/text-3d/t3d-reddit')
   , require('./slides/text-3d/1')
   , require('./slides/text-3d/t3d-code')
+
+  , require('./slides/dance')
+  , require('./slides/robot-vj')
+  , require('./slides/thankyou')
   ]
 
 window.addEventListener('hashchange', onHashChange)

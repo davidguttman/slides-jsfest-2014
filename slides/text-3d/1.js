@@ -47,7 +47,7 @@ module.exports = function run (el) {
     raf(tick)
   }
 
-  tick()
+  setTimeout(tick, 2000)
 
   function createJS () {
     var canvas = document.createElement('canvas')
