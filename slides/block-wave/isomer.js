@@ -13,7 +13,7 @@ function render () {
     h('img', {
       src: '/images/isomer.png',
       height: window.innerHeight/2}),
-    h('h1', 'npm i -S isomer'))
+    h('h1.cli', 'npm i -S isomer'))
 
   return html
 }

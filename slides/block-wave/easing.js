@@ -6,6 +6,7 @@ module.exports = function(el) {
   el.innerHTML = ''
   var div = document.createElement('div')
   var h1 = document.createElement('h1')
+  h1.classList.add('cli')
   h1.innerHTML = 'npm i -S ease-component'
   div.appendChild(h1)
   el.appendChild(div)

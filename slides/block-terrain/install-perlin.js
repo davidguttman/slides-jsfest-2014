@@ -10,7 +10,7 @@ module.exports = function(el) {
 
 function render () {
   var html = h('div',
-    h('h1', 'npm i -S perlin-simplex'))
+    h('h1.cli', 'npm i -S perlin-simplex'))
 
   return html
 }

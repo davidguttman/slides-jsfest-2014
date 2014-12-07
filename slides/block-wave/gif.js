@@ -14,7 +14,7 @@ function render () {
       src: '/images/gif.js.gif',
       height: window.innerHeight/2,
       style:{background: 'white'}}),
-    h('h1', 'npm i -S gif.jsify'))
+    h('h1.cli', 'npm i -S gif.jsify'))
 
   return html
 }

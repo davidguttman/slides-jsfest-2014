@@ -13,7 +13,7 @@ function render () {
     h('img', {
       src: '/images/t3d-code.png',
       height: window.innerHeight/2}),
-    h('h1', 'npm i -S text-3d-particles'))
+    h('h1.cli', 'npm i -S text-3d-particles'))
 
   return html
 }
