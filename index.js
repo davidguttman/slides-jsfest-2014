@@ -33,6 +33,7 @@ var slides =
   , require('./slides/block-twist/cheap-trick-wave')
   , require('./slides/block-twist/loading-wave')
   , require('./slides/block-twist/1')
+  , require('./slides/block-twist/warning')
   , require('./slides/block-twist/2')
 
   , require('./slides/block-terrain/cheap-trick-perlin')
