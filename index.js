@@ -43,8 +43,8 @@ var slides =
   , require('./slides/block-terrain/comment')
   , require('./slides/block-terrain/2')
 
-  , require('./slides/text-3d/1')
   , require('./slides/text-3d/t3d-reddit')
+  , require('./slides/text-3d/1')
   , require('./slides/text-3d/t3d-code')
   ]
 
