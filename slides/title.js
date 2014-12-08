@@ -5,7 +5,6 @@ module.exports = function(el) {
 
   var width = window.innerWidth
   var height = window.innerHeight
-  var fontSize = 50
 
   var canvas = document.createElement('canvas')
   canvas.width = width
@@ -14,15 +13,26 @@ module.exports = function(el) {
   context = canvas.getContext('2d')
 
   context.textAlign = 'center'
-  context.font = "bold "+fontSize+"px Georgia"
-  context.fillText('Winning the Internet', width/2, height/2 - fontSize/2)
-  context.font = "bold "+fontSize+"px Georgia"
-  context.fillText('with Browserify', width/2, height/2 + fontSize/2)
+
+  context.font = "bold 100px Lobster Two"
+  context.fillText('Winning', width/2,    22 * height/64)
+
+  context.font = "bold 50px Lobster Two"
+  context.fillText('the', width/2,        27 * height/64)
+
+  context.font = "bold 100px Lobster Two"
+  context.fillText('Internet', width/2,   34 * height/64)
+
+  context.font = "bold 50px Lobster Two"
+  context.fillText('with', width/2,       39 * height/64)
+
+  context.font = "bold 100px Lobster Two"
+  context.fillText('Browserify', width/2, 46 * height/64)
 
   var opts =
     { canvas: canvas
-    , density: 3
-    , nodeSize: 8
+    , density: 4
+    , nodeSize: 7
     , foreground: '#E0D09C'
     , background: '#0E1321'
     , duration: 10000
