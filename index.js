@@ -21,6 +21,8 @@ var slides =
   , require('./slides/block-wave/3')
   , require('./slides/block-wave/code-3')
   , require('./slides/block-wave/3')
+  , require('./slides/block-wave/3-alt')
+  , require('./slides/block-wave/3')
   , require('./slides/block-wave/4')
   , require('./slides/block-wave/isomer')
   , require('./slides/block-wave/code-4')
@@ -34,6 +36,7 @@ var slides =
   , require('./slides/block-wave/8')
 
   , require('./slides/block-twist/cheap-trick-wave')
+  , require('./slides/block-twist/actual')
   , require('./slides/block-twist/loading-wave')
   , require('./slides/block-twist/1')
   , require('./slides/block-twist/warning')
