@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "beefy index.js"
+    "dev": "beefy index.js",
+    "start": "beefy index.js --debug=false --cache --port=$PORT",
   },
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
   "license": "MIT",
   "dependencies": {
-    "beefy": "^2.1.1",
+    "beefy": "git://github.com/davidguttman/beefy#cache",
     "browserify": "^6.3.3",
     "color": "^0.7.3",
     "ease-component": "^1.0.0",
