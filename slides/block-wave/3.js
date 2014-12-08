@@ -1,7 +1,5 @@
 var raf = require('raf')
-var Color = require('color')
-
-var cOrange = Color('#F27300')
+var ease = require('ease-component')
 
 module.exports = function(el) {
   el.innerHTML = ''
@@ -15,13 +13,24 @@ module.exports = function(el) {
 
   var duration = 2000
 
+  // p is progress between 0 and 1
   function render (p) {
     ctx.clearRect(0, 0, width, height)
-    var mod = Math.sin(p * 2 * Math.PI) / 2 + 0.5
-    var w = h = mod * width/4 + width/16
+
+    var mod
+    if (p < 0.5) {
+      mod = ease.inOutSine(p*2)
+    } else {
+      mod = ease.inOutSine((1-p)*2)
+    }
+
+    var w = (mod * width/4) + ((1-mod) * width/16)
+    var h = w
+
     var x = width/2 - w/2
     var y = height/2 - h/2
-    ctx.fillStyle = cOrange.hexString()
+
+    ctx.fillStyle = '#F27300'
     ctx.fillRect(x, y, w, h)
   }
 

@@ -1,11 +1,11 @@
 var raf = require('raf')
-var Color = require('color')
 var Isomer = require('isomer')
+var ease = require('ease-component')
 
 var Point = Isomer.Point
 var Shape = Isomer.Shape
 
-var cOrange = Color('#F27300')
+// var cOrange = Color('#F27300')
 
 module.exports = function(el) {
   el.innerHTML = ''
@@ -23,16 +23,25 @@ module.exports = function(el) {
 
   function render (p) {
     ctx.clearRect(0, 0, width, height)
-    var mod = Math.sin(p * 2 * Math.PI) / 2 + 0.5
+
+    var mod
+    if (p < 0.5) {
+      mod = ease.inOutSine(p*2)
+    } else {
+      mod = ease.inOutSine((1-p)*2)
+    }
+
     var w = 0.5
-    var d = 2 * mod + 1
-    var h = 2 * mod + 1
+    var d = (mod * 3) + ((1-mod) * 1)
+    var h = d
+
     var x = 1
     var y = 1 - d/2
     var z = 3 - h/2
-    var pos = Point(x, y, z)
-    var c = new Isomer.Color(cOrange.red(), cOrange.green(), cOrange.blue())
-    iso.add(Shape.Prism(pos, w, d, h), c)
+
+    var pos = Isomer.Point(x, y, z)
+    var color = new Isomer.Color(242, 115, 0)
+    iso.add(Isomer.Shape.Prism(pos, w, d, h), color)
   }
 
   var timeStart = Date.now()
