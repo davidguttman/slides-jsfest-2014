@@ -10,7 +10,7 @@ module.exports = function(el) {
 
 function render () {
   var html = h('div',
-    h('h1', 'Make Gifs'),
+    h('h1', 'Thanks!'),
     h('h1', '@DavidGuttman'))
 
   return html
