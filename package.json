@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "beefy index.js",
-    "start": "beefy index.js --debug=false --cache --port=$PORT",
+    "start": "beefy index.js --debug=false --cache --port=$PORT"
   },
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
   "license": "MIT",
