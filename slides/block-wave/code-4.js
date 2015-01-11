@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div',
     h('img', {
-      src: '/images/pulsing-square-2.png',
+      src: 'http://i.imgur.com/tx1yqwu.png',
       height: window.innerHeight/2}))
 
   return html

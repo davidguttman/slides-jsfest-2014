@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div',
     h('img', {
-      src: '/images/t3d-code.png',
+      src: 'http://i.imgur.com/Vx22r4w.png',
       height: window.innerHeight/2}),
     h('h1.cli', 'npm i -S text-3d-particles'))
 

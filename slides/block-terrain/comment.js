@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div',
     h('img', {
-      src: '/images/block-terrain-comment.png',
+      src: 'http://i.imgur.com/2cB6qfG.png',
       width: 0.9 * window.innerWidth}))
 
   return html

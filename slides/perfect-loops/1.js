@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div',
     h('img', {
-      src: '/images/alien.png',
+      src: 'http://i.imgur.com/mJLAdhF.png',
       height: window.innerHeight/2}),
     h('h1', 'r/perfectloops'))
 

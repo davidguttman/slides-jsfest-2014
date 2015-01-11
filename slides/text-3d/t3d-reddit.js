@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div',
     h('img', {
-      src: '/images/t3d-reddit.png',
+      src: 'http://i.imgur.com/fB43u88.png',
       height: window.innerHeight/3.5}))
 
   return html

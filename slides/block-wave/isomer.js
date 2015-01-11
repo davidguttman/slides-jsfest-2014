@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div',
     h('img', {
-      src: '/images/isomer.png',
+      src: 'http://i.imgur.com/DaTL1WT.png',
       height: window.innerHeight/2}),
     h('h1.cli', 'npm i -S isomer'))
 

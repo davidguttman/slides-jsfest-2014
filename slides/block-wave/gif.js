@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div',
     h('img', {
-      src: '/images/gif.js.gif',
+      src: 'http://i.imgur.com/ofsyUMp.gif',
       height: window.innerHeight/2,
       style:{background: 'white'}}),
     h('h1.cli', 'npm i -S gif.jsify'))

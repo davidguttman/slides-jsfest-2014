@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div',
     h('img', {
-      src: '/images/chess.gif',
+      src: 'http://i.imgur.com/tHYkj2P.gif',
       height: window.innerHeight/2}))
 
   return html

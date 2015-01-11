@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div'
     , h('img', {
-        src: '/images/robot-vj.png',
+        src: 'http://i.imgur.com/ubmfrNi.png',
         height: window.innerHeight/2})
     , h('h1', '@theRobotVJ')
     )
