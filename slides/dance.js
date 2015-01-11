@@ -11,7 +11,7 @@ module.exports = function(el) {
 function render () {
   var html = h('div'
     , h('img', {
-        src: '/images/dance-js.svg',
+        src: 'http://i.imgur.com/8a7YpCc.png',
         height: window.innerHeight/2})
     // , h('h1', 'DanceJS')
     )
